@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+.dot {
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.space{
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .box{
+  padding: 0px
+} */
+
+.piece{
+  padding:6px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box.top{
+  margin-bottom: 0px;
+  border-bottom: 5px solid black;
+} 
+
+.box{
+  height:80px;
+  padding: 0px;
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+            "a b c"
+            "d e f"
+            "g h i";
 }
 
-.App-link {
-  color: #61dafb;
+.zero{
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.one{
+  grid-area: a;
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
+}
+
+.three{
+  grid-area: c;
+  /* grid-area: b; */
+
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
+}
+
+.four{
+  grid-area: d;
+  /* grid-area: b; */
+
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
+}
+
+.five{
+  grid-area: e;
+  /* grid-area: b; */
+
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
+}
+
+.six{
+  grid-area: f;
+  /* grid-area: b; */
+
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
+}
+
+.seven{
+  grid-area: g;
+  /* grid-area: b; */
+
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
+}
+
+.nine{
+  grid-area: i;
+  /* grid-area: b; */
+
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  background-color:black;
+  border-radius: 50%;
+  display: inline-block;
+  place-self: center;
 }
